@@ -1,18 +1,18 @@
 class Scripture
 {
-    private Verse _reference;
+    private Verse _verse;
     private List<Word> _words;
 
-    public Scripture(Verse reference, string text)
+    public Scripture(Verse verse, string text)
     {
-        _reference = reference;
+        _verse = verse;
         _words = text.Split(' ').Select(word => new Word(word)).ToList();
     }
 
     public void DisplayScripture()
     {
         Console.Clear();
-        Console.WriteLine(_reference);
+        Console.WriteLine(_verse);
         foreach (var word in _words)
         {
             Console.Write(word.GetDisplayText() + " ");
