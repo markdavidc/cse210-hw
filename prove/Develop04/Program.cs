@@ -1,5 +1,5 @@
 using System;
-// as a stretch, I tried to keep a log fo how many times activities were performed. 
+// as a stretch, I tried to keep a log of how many times activities were performed. 
 class Program
 {
     static void Main(string[] args)
